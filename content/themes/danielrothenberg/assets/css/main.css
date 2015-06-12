@@ -12,6 +12,16 @@ body {
 	padding: 20px 0 0 10px;
 }
 
+article {
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgba(0,0,0, .15);
+}
+
+article:last-of-type {
+	border: none;
+}
+
 .sidebar {
 	text-align: center;
 	color: white;
@@ -153,6 +163,11 @@ body {
 
 	.content {
 		margin-left: 325px;
-		padding: 20px;
+		padding: 20px 50px;
+	}
+
+	main {
+		max-width: 800px;
+		margin: 0 auto;
 	}
 }
