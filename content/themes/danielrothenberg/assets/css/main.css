@@ -1,0 +1,156 @@
+/* Need mixins */
+/* blue = #7597B9 */
+
+body {
+	font-family: "adelle-sans", "Helvetica", "sans-serif";
+	font-size: 16px;
+}
+
+.content {
+	padding: 20px 0 0 10px;
+}
+
+.sidebar {
+	text-align: center;
+	color: white;
+	padding: 15px 0;
+	position: relative;
+	background: #222;
+	z-index: 0;
+}
+
+.sidebar-bg {
+	position: absolute;
+	background-size: cover !important;
+	width: 100%;
+	height: 100%;
+	left: 0; right: 0; top: 0; bottom: 0;
+	opacity: .35;
+	z-index: -1;
+}
+
+.sidebar hr {
+	opacity: .25;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 4px solid white;
+}
+
+.site-title {
+	margin-bottom: 10px;
+	font-size: 1.65em;
+}
+
+.site-title a {
+	color: white;
+}
+
+.description {
+	font-size: 1.15em;
+	margin-bottom: 0;
+}
+
+.main-navigation li a {
+	color: white;
+	position: relative;
+}
+
+.page-links li {
+	padding: 0 8px;
+}
+
+.social-links {
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.social-links li a {
+	color: white;
+}
+
+.post-title {
+	font-weight: bold;
+	color: #222;
+}
+
+.post-title a:visited, .post-title a:focus {
+	color: inherit;
+}
+
+.post-title a:hover {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+.post-meta {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.post-meta .separator {
+	opacity: .35;
+	padding: 0 5px;
+}
+
+.post-meta time {
+	/*font-style: italic;*/
+	letter-spacing: .5pt;
+	/*color: #767676;*/
+}
+
+.post-meta .tags {
+	display: block;
+	font-size: .85em;
+}
+
+.post-content img {
+	max-width: 100%;
+	height: auto; 
+}
+
+.post-header {
+	position: relative;
+}
+
+.post-header:before {
+	content: '';
+	height: 3px;
+	width: 35px;
+	position: absolute;
+	background: #337ab7;
+	top: -15px;
+	left: 0;
+}
+
+.tag-archive-header h4 {
+	background: #337ab7;
+	color: white;
+	display: inline-block;
+	padding: 8px 10px 10px;
+}
+
+.tag-archive-header i {
+	margin-right: 5px;
+	font-size: 16px;
+}
+
+@media(min-width: 768px) {
+	.sidebar {
+		position: fixed;
+		width: 325px;
+		height: 100%;
+		padding: 40px 0px;
+		color: #fff;
+	}
+
+	.content {
+		margin-left: 325px;
+		padding: 20px;
+	}
+}

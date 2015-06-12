@@ -1,0 +1,21 @@
+{{! This is a custom template page associated to the /projects static page.}}
+{{! If you want to have something similar, make sure you modify its content.}}
+
+{{!< default}}
+
+<main role="main">
+    <article class="{{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
+
+        {{#post}}
+        <h1 class="post-title">{{title}}</h1>
+
+        {{! Here goes the description of the projects static page. The content of the post is used for this. }}
+        <section class="post-content projects-content">
+            {{content}}
+        </section>
+
+
+        {{/post}}
+
+    </article>
+</main>
