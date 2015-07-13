@@ -10,6 +10,7 @@ body {
 
 .content {
 	padding: 20px 0 0 10px;
+	overflow-wrap: break-word;
 }
 
 article {
